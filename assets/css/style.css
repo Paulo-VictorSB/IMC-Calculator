@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes start {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#apresentacao {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.24);
+    background-color: rgb(2, 137, 255);
+    color: white;
+    width: 50%;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+#introducao {
+    height: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    font-size: 1.3em;
+}
+
+#apresentacao > img {
+    height: 400px;
+    width: 400px;
+    animation: animacao 2s;
+}
+
+@keyframes animacao {
+    0% {
+        opacity: 0;
+        margin-left: 150px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#resultado {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-flow: column nowrap;
+}
+
+#box-inputs {
+    background-color: rgb(117, 190, 255);
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 10px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.164);
+}
+
+#ipeso, #ialtura {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#ipeso {
+    margin-left: 9px;
+}
+
+#calc {
+    background-color: rgb(32, 89, 139);
+    border: none;
+    padding: 10px;
+    width: 21%;
+    color: white;
+    font-weight: bold;
+}
+
+label {
+    margin-left: -54px;
+}
+
+#calc:hover {
+    background-color: rgb(59, 143, 218);
+    cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5, tr, td, table, input, button, label {
+    animation: start 2s ;
+}
+
+#box-resultado {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.resultado-calc {
+    background-color: rgb(117, 190, 255);
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.164);
+    color: white;
+}
+
+table {
+    width: 100%;
+    font-weight: bold;
+}
+
+tr, td {
+    padding: 5px;
+}
+
+.tableEscuro {
+    background-color: #0289FF;
+    color: white;
+    font-weight: bold;
+}
+
+.tableClaro {
+    background-color: #cbe7ff;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        min-height: 100vh;
+        flex-flow: column nowrap;
+    }
+
+    #apresentacao{
+        width: 92%;
+    }
+
+    #resultado{
+        width: 92%;
+    }
+
+    #box-inputs{
+        padding: 50px;
+    }
+
+    #calc {
+        width: 55%;
+    }
+}

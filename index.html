@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Profissional de IMC</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <section id="apresentacao">
+        <div id="introducao">
+            <h1>Calculadora de IMC (e peso ideal)</h1>
+            <p>A classificação do índice de massa corporal (IMC) pode ajudar a identificar problemas de obesidade ou desnutrição, em crianças, adolescentes, adultos e idosos.</p>
+            <p>Além de calcular o valor de IMC, esta calculadora também indica qual o intervalo de peso ideal que deve ter para garantir uma melhor qualidade de vida. Ter um peso dentro do intervalo de peso ideal ajuda ainda a evitar o aparecimento de várias doenças crônicas, como diabetes e hipertensão.</p>
+        </div>
+        <img src="assets/img/imagem-doutor.png">
+    </section>
+
+    <section id="resultado">
+        <div id="box-inputs">
+            <h1>Coloque os seus dados na calculadora e calcule o seu IMC</h1>
+            <label>Peso: <input type="number" id="ipeso" placeholder="KG"></label>
+            <label>Altura: <input type="number" id="ialtura" placeholder="Metros"></label>
+            <button id="calc">Calcular IMC</button>
+        </div>
+        <div id="box-resultado">
+            <p id="resultado-calc"></p>
+            <h2>Como é feito o cálculo de IMC</h2>
+            <p>O IMC é calculado dividindo o peso (em kg) pela altura ao quadrado (em m), de acordo com a seguinte fórmula: IMC = peso / (altura x altura).</p>
+            <p>O resultado de IMC é dado em kg/m2.</p>
+            <h2>Como interpretar o resultado de IMC</h2>
+            <p>Depois de obter o resultado de IMC, deve-se interpretar o valor utilizando a seguinte tabela:</p>
+        </div>
+        <div id="box-tabela">
+            <table>
+                <tr class="tableEscuro">
+                    <td>IMC</td>
+                    <td>Classificação</td>
+                </tr>
+                <tr>
+                    <td>Menor que 18,5</td>
+                    <td>Magreza</td>
+                </tr>
+                <tr class="tableClaro">
+                    <td>18,5 a 24,9</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>25 a 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr class="tableClaro">
+                    <td>30 a 34,9</td>
+                    <td>Obesidade grau I</td>
+                </tr>
+                <tr>
+                    <td>35 a 39,9</td>
+                    <td>Obesidade grau II</td>
+                </tr>
+                <tr class="tableClaro">
+                    <td>Maior que 40</td>
+                    <td>Obesidade grau III</td>
+                </tr>
+            </table>
+        </div>
+        <p>De acordo com o resultado de IMC também é possível prever o risco que cada pessoa tem de desenvolver doenças crônicas. Isto porque quanto maior é o valor do IMC, maior é a quantidade de gordura acumulada no corpo e maior o risco de doenças como pressão alta, diabetes e problemas cardíacos.</p>
+    </section>
+
+    <script type="module" src="assets/js/index.js"></script>
+</body>
+</html>
